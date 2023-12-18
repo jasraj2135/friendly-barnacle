@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+</head>
+<body>
+    <h2>Hello, {{ username }}!</h2>
+    <p>You are logged in as an Ops User.</p>
+    <h3>Upload File</h3>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Select file (pptx, docx, xlsx):</label>
+        <input type="file" id="file" name="file" accept=".pptx, .docx, .xlsx" required><br>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
